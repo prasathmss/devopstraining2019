@@ -1,2 +1,17 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<tree-map/>
+<tree-map>
+  <entry>
+    <string>pipelineascode</string>
+    <tree-map>
+      <entry>
+        <string>Parallel Jobs</string>
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.3">
+          <holding class="sorted-set">
+            <int>59</int>
+            <int>60</int>
+          </holding>
+        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
+      </entry>
+    </tree-map>
+  </entry>
+</tree-map>

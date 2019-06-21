@@ -1,0 +1,16 @@
+---
+
+
+- hosts: db
+  sudo: yes
+
+  tasks: 
+  - name: Install Apache Packages
+    command: apt-get install Apache -y
+    when: ansible_os_family == "ubuntu"
+ 
+  tasks:
+  - name: Install Apache Packages on redhat
+    command: yum install Httpd -y
+    when: ansible_os_family == "RedHat"
+  

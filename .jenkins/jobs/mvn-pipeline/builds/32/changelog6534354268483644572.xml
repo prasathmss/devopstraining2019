@@ -1,0 +1,11 @@
+commit 4ffa78d0c42df068d27fb27ae5268a57ee3c951b
+tree 137e65d702c3072b84d646614be9a36a73de0a50
+parent 85b829e46145e1e1a6763bc9dddc1d0a59f68aa7
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-20 04:20:03 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-20 04:20:03 +0000
+
+    Compose
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 cc9ab913fbe10d6e0a0ecb252d5b7730cc00c7e5 A	docker/docker-compose/Install_Compose.txt

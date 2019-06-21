@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.28">
+  <suites>
+    <suite>
+      <file>/root/.jenkins/workspace/pipelineascode/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports/TEST-sample.atmosphere.SampleAtmosphereApplicationTests.xml</file>
+      <name>sample.atmosphere.SampleAtmosphereApplicationTests</name>
+      <duration>0.64</duration>
+      <time>0.64</time>
+      <nodeId>34</nodeId>
+      <enclosingBlocks>
+        <string>32</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Test Results Publish</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.64</duration>
+          <className>sample.atmosphere.SampleAtmosphereApplicationTests</className>
+          <testName>chatEndpoint</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.64</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

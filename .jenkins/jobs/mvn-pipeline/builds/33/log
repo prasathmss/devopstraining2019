@@ -1,0 +1,501 @@
+Started by an SCM change
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4Ol73AGAou7WSMF8O+Zy5dVa3BHumh7rKakbH5M5wxrXAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Fw0gjifRgvKgHG3ORqlMyt/bz2u8FeqBC9d5YRj/LmVAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4OabfLJa36XLGE4S9rHNZcMN6VKyYir0fykXsTJ7Cmk8AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /root/.jenkins/workspace/mvn-pipeline
+[8mha:////4I0+e6HuooLQX7t83r7X1SZ2s5twHtDl9bSUlKAzO9BRAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4JYQlidYM4aMrsaoYA1i18LXg5dl7Tn2m49lPazp9fKnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4AVrFE5+O1rHabNVsiUSTz+V1ymR8S1PcvMISF44V0bLAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Pull Git Repo)
+[8mha:////4D/htcmTIlZwOsf3SwmwhPvGuoeVHnP9y+RsFt8QRNk3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amitvashist7/jenkins-devops-062019.git # timeout=10
+Fetching upstream changes from https://github.com/amitvashist7/jenkins-devops-062019.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/amitvashist7/jenkins-devops-062019.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 157fcbc26646dc7677ed98510589eba90f59e187 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157fcbc26646dc7677ed98510589eba90f59e187
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 157fcbc26646dc7677ed98510589eba90f59e187
+Commit message: "Compose-Demo-1"
+ > git rev-list --no-walk 4ffa78d0c42df068d27fb27ae5268a57ee3c951b # timeout=10
+[8mha:////4HZYU+Cp11I3WjwMaAFDSbxFNfgWV8/aAK5nSb5wnhtRAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4AWS4zRJr60BKTqmAlhE3xx+XfCLPtUSMVlaDQEVpmIxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4LxbMiywxas0j/UjG56CiKVDRecoXCl50QtrAgJPoul1AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] dir
+Running in /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere
+[8mha:////4NugAv+PEfCfWqQyDjLqz9HqrDo6bFWhBm/wrhyvUBOTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4CIGaIOoMc9ZABboDEzsSzrMry8Duo60+IJ2baDWfu8EAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4PXjOJ5CgEMUkTtRHOhk7VW8xlvf7seYymv7jJ74ASSTAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Clean old Packages)
+[8mha:////4Oud7RNEa3wchnw5/goxyG1D4qnGwwEq4Bjn1CPKhzCPAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ mvn clean
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-sample-atmosphere ---
+[INFO] Deleting /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.563 s
+[INFO] Finished at: 2019-06-20T04:45:50+00:00
+[INFO] Final Memory: 14M/175M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4C3UzXVFcY8QPWWm5tFLL41qGlDdN+HBAV2NLBdn2k40AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4GJJD+/T+yUtPbfLJwGg6R9KboXVChWgVn55Mg0ByyRIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4IC14FXMtdJhDwgv3lnGPqupOrvpAOYxSFwvXH2otsMUAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4HcnW6upjCf/T35br89LjYzxifDLq1QW0IFhzGjtJ35/AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Build Package)
+[8mha:////4PaqPzpZqPe45YVpjWfF/fPmNBf53g4l36bd8t7TwKnRAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ spring-boot-sample-atmosphere ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-atmosphere ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-atmosphere ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-atmosphere ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-atmosphere ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ spring-boot-sample-atmosphere ---
+[INFO] Surefire report directory: /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+04:45:55.815 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:55.836 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+04:45:55.859 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+04:45:55.886 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sample.atmosphere.SampleAtmosphereApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+04:45:55.910 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sample.atmosphere.SampleAtmosphereApplicationTests], using SpringBootContextLoader
+04:45:55.918 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTests-context.xml] does not exist
+04:45:55.919 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTestsContext.groovy] does not exist
+04:45:55.919 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04:45:55.998 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.015 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sample.atmosphere.SampleAtmosphereApplicationTests]: using defaults.
+04:45:56.018 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+04:45:56.028 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+04:45:56.033 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+04:45:56.034 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29a23c3d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b6ac111, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@6fe46b62, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@591fd34d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61e45f87, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c9b78e3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3068b369, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@17ca8b92, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5491f68b]
+04:45:56.037 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.037 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+Running sample.atmosphere.SampleAtmosphereApplicationTests
+04:45:56.040 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.042 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+04:45:56.042 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+04:45:56.042 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sample.atmosphere.SampleAtmosphereApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+04:45:56.043 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sample.atmosphere.SampleAtmosphereApplicationTests], using SpringBootContextLoader
+04:45:56.044 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTests-context.xml] does not exist
+04:45:56.044 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTestsContext.groovy] does not exist
+04:45:56.045 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04:45:56.052 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.055 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sample.atmosphere.SampleAtmosphereApplicationTests]: using defaults.
+04:45:56.059 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+04:45:56.061 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+04:45:56.062 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+04:45:56.063 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27068a50, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@68e62ca4, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5328a9c1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b78fdb1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48bfb884, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@11653e3b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@715fb77, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1b9c1b51, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e52fb3e]
+04:45:56.064 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.064 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.066 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.066 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.071 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@59942b48 testClass = SampleAtmosphereApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1869f114 testClass = SampleAtmosphereApplicationTests, locations = '{}', classes = '{class sample.atmosphere.SampleAtmosphereApplication, class sample.atmosphere.SampleAtmosphereApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@58a55449, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3c291aad, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS].
+04:45:56.072 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.073 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:45:56.075 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@59942b48 testClass = SampleAtmosphereApplicationTests, testInstance = sample.atmosphere.SampleAtmosphereApplicationTests@21f9277b, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1869f114 testClass = SampleAtmosphereApplicationTests, locations = '{}', classes = '{class sample.atmosphere.SampleAtmosphereApplication, class sample.atmosphere.SampleAtmosphereApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@58a55449, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3c291aad, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+04:45:56.219 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+04:45:56.221 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+04:45:56.221 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+04:45:56.225 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+04:45:56.226 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v1.4.0.BUILD-SNAPSHOT)
+
+2019-06-20 04:45:57.478  INFO 6293 --- [           main] s.a.SampleAtmosphereApplicationTests     : Starting SampleAtmosphereApplicationTests on master with PID 6293 (started by root in /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere)
+2019-06-20 04:45:57.487  INFO 6293 --- [           main] s.a.SampleAtmosphereApplicationTests     : No active profile set, falling back to default profiles: default
+2019-06-20 04:45:57.536  INFO 6293 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:45:57 UTC 2019]; root of context hierarchy
+2019-06-20 04:45:58.898  INFO 6293 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-20 04:45:59.582  INFO 6293 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2019-06-20 04:45:59.611  INFO 6293 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-06-20 04:45:59.614  INFO 6293 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2019-06-20 04:45:59.975  INFO 6293 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-20 04:45:59.983  INFO 6293 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-20 04:45:59.983  INFO 6293 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2450 ms
+2019-06-20 04:46:00.183  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'atmosphereServlet' to [/chat/*]
+2019-06-20 04:46:00.185  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/home/*]
+2019-06-20 04:46:00.186  INFO 6293 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing AtmosphereFramework
+2019-06-20 04:46:00.235  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-20 04:46:00.236  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-20 04:46:00.237  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-20 04:46:00.237  INFO 6293 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-20 04:46:00.650  INFO 6293 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:45:57 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:00.742  INFO 6293 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-20 04:46:00.744  INFO 6293 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-20 04:46:00.758  INFO 6293 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-06-20 04:46:00.772  INFO 6293 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:00.773  INFO 6293 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:00.813  INFO 6293 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:01.086  INFO 6293 --- [           main] org.atmosphere.util.IOUtils              : META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+2019-06-20 04:46:01.115  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+2019-06-20 04:46:01.116  INFO 6293 --- [           main] o.a.cpr.DefaultAnnotationProcessor       : AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+2019-06-20 04:46:01.144  INFO 6293 --- [           main] org.atmosphere.cpr.AnnotationHandler     : Found Annotation in class sample.atmosphere.ChatService being scanned: interface org.atmosphere.config.service.ManagedService
+2019-06-20 04:46:01.173  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler mapped to context-path /chat and Broadcaster Class org.atmosphere.cpr.DefaultBroadcaster
+2019-06-20 04:46:01.174  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor [@ManagedService Interceptor, Atmosphere LifeCycle,  Track Message Size Interceptor using |, UUID Tracking Interceptor] mapped to AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler
+2019-06-20 04:46:01.179  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Auto detecting WebSocketHandler in /WEB-INF/classes/
+2019-06-20 04:46:01.180  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2019-06-20 04:46:01.187  INFO 6293 --- [           main] o.a.container.JSR356AsyncSupport         : JSR 356 Mapping path /chat
+2019-06-20 04:46:01.205  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installing Default AtmosphereInterceptor
+2019-06-20 04:46:01.205  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2019-06-20 04:46:01.206  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2019-06-20 04:46:01.206  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2019-06-20 04:46:01.207  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2019-06-20 04:46:01.208  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2019-06-20 04:46:01.208  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2019-06-20 04:46:01.208  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2019-06-20 04:46:01.210  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2019-06-20 04:46:01.210  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2019-06-20 04:46:01.210  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2019-06-20 04:46:01.211  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2019-06-20 04:46:01.211  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2019-06-20 04:46:01.216  INFO 6293 --- [           main] o.a.interceptor.HeartbeatInterceptor     : HeartbeatInterceptor configured with padding value ' ', client frequency 60 seconds and server frequency 10 seconds
+2019-06-20 04:46:01.227  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2019-06-20 04:46:01.228  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2019-06-20 04:46:01.229  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2019-06-20 04:46:01.229  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Broadcaster Polling Wait Time 100
+2019-06-20 04:46:01.229  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Shared ExecutorService supported: true
+2019-06-20 04:46:01.230  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Messaging Thread Pool Size: Unlimited
+2019-06-20 04:46:01.230  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Async I/O Thread Pool Size: 200
+2019-06-20 04:46:01.230  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2019-06-20 04:46:01.230  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2019-06-20 04:46:01.235  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Invoke AtmosphereInterceptor on WebSocket message true
+2019-06-20 04:46:01.236  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : HttpSession supported: false
+2019-06-20 04:46:01.236  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+2019-06-20 04:46:01.236  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.5.4 using javax.servlet/3.0 and jsr356/WebSocket API
+2019-06-20 04:46:01.238  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere Framework 2.2.4 started.
+2019-06-20 04:46:01.238  INFO 6293 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 
+
+	For Atmosphere Framework Commercial Support, visit 
+	http://www.async-io.org/ or send an email to support@async-io.org
+
+2019-06-20 04:46:01.267  INFO 6293 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 45935 (http)
+2019-06-20 04:46:01.272  INFO 6293 --- [           main] s.a.SampleAtmosphereApplicationTests     : Started SampleAtmosphereApplicationTests in 5.04 seconds (JVM running for 6.36)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v1.4.0.BUILD-SNAPSHOT)
+
+2019-06-20 04:46:01.345  INFO 6293 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on master with PID 6293 (started by root in /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere)
+2019-06-20 04:46:01.346  INFO 6293 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2019-06-20 04:46:01.349  INFO 6293 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@62785afd: startup date [Thu Jun 20 04:46:01 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:01.367  INFO 6293 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-20 04:46:01.436  INFO 6293 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-20 04:46:01.436  INFO 6293 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Starting WebSocketConnectionManager
+2019-06-20 04:46:01.436  INFO 6293 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Connecting to WebSocket at ws://localhost:45935/chat/websocket
+2019-06-20 04:46:01.448  INFO 6293 --- [           main] s.a.SampleAtmosphereApplicationTests     : Waiting for response: latch=1
+2019-06-20 04:46:01.663  INFO 6293 --- [cTaskExecutor-1] o.s.w.s.c.WebSocketConnectionManager     : Successfully connected
+2019-06-20 04:46:01.697  INFO 6293 --- [o-auto-1-exec-1] sample.atmosphere.ChatService            : Connected
+2019-06-20 04:46:01.791  INFO 6293 --- [o-auto-1-exec-1] sample.atmosphere.ChatService            : Author test sent message test
+2019-06-20 04:46:01.850  INFO 6293 --- [lient-AsyncIO-1] s.a.SampleAtmosphereApplicationTests     : Received: TextMessage payload=[55|{"messa..], byteCount=58, last=true] (1)
+2019-06-20 04:46:01.863  INFO 6293 --- [           main] s.a.SampleAtmosphereApplicationTests     : Got response: 55|{"message":"test","author":"test","time":1561005961791}
+2019-06-20 04:46:01.864  INFO 6293 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.568 seconds (JVM running for 6.952)
+2019-06-20 04:46:01.864  INFO 6293 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@62785afd: startup date [Thu Jun 20 04:46:01 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:01.867  INFO 6293 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-20 04:46:01.869  INFO 6293 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Stopping WebSocketConnectionManager
+2019-06-20 04:46:01.871  INFO 6293 --- [o-auto-1-exec-3] sample.atmosphere.ChatService            : Client 8aee16aa-1c6b-46d9-965b-2da10a0b06d7 disconnected [cancelled]
+2019-06-20 04:46:01.928  INFO 6293 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:45:57 UTC 2019]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.91 sec - in sample.atmosphere.SampleAtmosphereApplicationTests
+2019-06-20 04:46:02.019  INFO 6293 --- [       Thread-3] org.atmosphere.cpr.AtmosphereFramework   : Latest version of Atmosphere's JavaScript Client 2.3.8
+2019-06-20 04:46:02.020  INFO 6293 --- [       Thread-3] org.atmosphere.cpr.AtmosphereFramework   : 
+
+	Atmosphere Framework Updates
+	Minor available (bugs fixes): 2.2.13-EOL-CVE
+	Major available (new features): 2.5.2
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (default-report) @ spring-boot-sample-atmosphere ---
+[INFO] Loading execution data file /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] Analyzed bundle 'Spring Boot Atmosphere Sample' with 6 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ spring-boot-sample-atmosphere ---
+[INFO] Building jar: /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.4.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-atmosphere ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.383 s
+[INFO] Finished at: 2019-06-20T04:46:03+00:00
+[INFO] Final Memory: 35M/235M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4BLKJd/c1+Y+8HuC+OZuy26HKOw/mAUkan3Cuubt4NJqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
+[8mha:////4H+jtBK1/JJ7CNPlIHit1eiF5hMz8kMk0KaONpgKOtbgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEi+zpyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4E7khHo0dd0m1wkefRlgKmRa1tia1C9IZve+qsbqKQG0AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohU7YqYWKMunCCkISSN/m+TlHbiRFyNOxCoxIQHy7ZkvecLyhjgSMFwp7G3GJXlg59MTnym0F89zdzRhSvCSF7zVs8tdfq01paShlUFg42ArUblKVo0CXbCybusvERTnVPI20EAs90IDyhEJicZ0rcsAfa3qYuEP85fACxDAlbX2Zrm8yzf8hZCqsIAAAA=[0m[Pipeline] stage
+[8mha:////4JJsGh+uKscI0kqg1nrIV7PupLuNkpYE7ArO5kab+FxWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (Code Quality)
+[8mha:////4Fp0yQcFYEeNlwShZTZzsZgPAMP2s9b4//Ii7+v8NC/NAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBrANZ3i+AAAA[0m[Pipeline] sh
++ mvn verify
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ spring-boot-sample-atmosphere ---
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-atmosphere ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-atmosphere ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-atmosphere ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-atmosphere ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ spring-boot-sample-atmosphere ---
+[INFO] Surefire report directory: /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+04:46:08.349 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.363 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+04:46:08.378 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+04:46:08.409 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sample.atmosphere.SampleAtmosphereApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+04:46:08.426 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sample.atmosphere.SampleAtmosphereApplicationTests], using SpringBootContextLoader
+04:46:08.433 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTests-context.xml] does not exist
+04:46:08.434 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTestsContext.groovy] does not exist
+04:46:08.434 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04:46:08.491 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.503 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sample.atmosphere.SampleAtmosphereApplicationTests]: using defaults.
+04:46:08.506 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+04:46:08.514 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+04:46:08.519 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+04:46:08.519 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29a23c3d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b6ac111, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@6fe46b62, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@591fd34d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61e45f87, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c9b78e3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3068b369, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@17ca8b92, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5491f68b]
+04:46:08.522 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.523 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+Running sample.atmosphere.SampleAtmosphereApplicationTests
+04:46:08.527 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.528 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+04:46:08.528 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+04:46:08.528 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sample.atmosphere.SampleAtmosphereApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+04:46:08.529 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sample.atmosphere.SampleAtmosphereApplicationTests], using SpringBootContextLoader
+04:46:08.529 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTests-context.xml] does not exist
+04:46:08.530 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: class path resource [sample/atmosphere/SampleAtmosphereApplicationTestsContext.groovy] does not exist
+04:46:08.530 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sample.atmosphere.SampleAtmosphereApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04:46:08.534 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.536 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sample.atmosphere.SampleAtmosphereApplicationTests]: using defaults.
+04:46:08.538 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+04:46:08.539 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+04:46:08.540 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+04:46:08.540 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27068a50, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@68e62ca4, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5328a9c1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b78fdb1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48bfb884, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@11653e3b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@715fb77, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1b9c1b51, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e52fb3e]
+04:46:08.540 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.541 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.541 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.542 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.546 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@59942b48 testClass = SampleAtmosphereApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1869f114 testClass = SampleAtmosphereApplicationTests, locations = '{}', classes = '{class sample.atmosphere.SampleAtmosphereApplication, class sample.atmosphere.SampleAtmosphereApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@58a55449, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3c291aad, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS].
+04:46:08.547 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.547 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sample.atmosphere.SampleAtmosphereApplicationTests]
+04:46:08.548 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@59942b48 testClass = SampleAtmosphereApplicationTests, testInstance = sample.atmosphere.SampleAtmosphereApplicationTests@21f9277b, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1869f114 testClass = SampleAtmosphereApplicationTests, locations = '{}', classes = '{class sample.atmosphere.SampleAtmosphereApplication, class sample.atmosphere.SampleAtmosphereApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@58a55449, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3c291aad, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+04:46:08.638 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+04:46:08.640 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+04:46:08.640 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+04:46:08.643 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+04:46:08.643 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v1.4.0.BUILD-SNAPSHOT)
+
+2019-06-20 04:46:09.549  INFO 6403 --- [           main] s.a.SampleAtmosphereApplicationTests     : Starting SampleAtmosphereApplicationTests on master with PID 6403 (started by root in /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere)
+2019-06-20 04:46:09.550  INFO 6403 --- [           main] s.a.SampleAtmosphereApplicationTests     : No active profile set, falling back to default profiles: default
+2019-06-20 04:46:09.604  INFO 6403 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:46:09 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:11.085  INFO 6403 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-20 04:46:11.821  INFO 6403 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2019-06-20 04:46:11.854  INFO 6403 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-06-20 04:46:11.857  INFO 6403 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2019-06-20 04:46:12.264  INFO 6403 --- [ost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-06-20 04:46:12.269  INFO 6403 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-20 04:46:12.269  INFO 6403 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2668 ms
+2019-06-20 04:46:12.478  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'atmosphereServlet' to [/chat/*]
+2019-06-20 04:46:12.479  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/home/*]
+2019-06-20 04:46:12.481  INFO 6403 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing AtmosphereFramework
+2019-06-20 04:46:12.526  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-20 04:46:12.527  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-20 04:46:12.528  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-20 04:46:12.528  INFO 6403 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-20 04:46:12.982  INFO 6403 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:46:09 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:13.079  INFO 6403 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-20 04:46:13.081  INFO 6403 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-20 04:46:13.110  INFO 6403 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-06-20 04:46:13.124  INFO 6403 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:13.125  INFO 6403 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:13.176  INFO 6403 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-20 04:46:13.433  INFO 6403 --- [           main] org.atmosphere.util.IOUtils              : META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+2019-06-20 04:46:13.458  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+2019-06-20 04:46:13.459  INFO 6403 --- [           main] o.a.cpr.DefaultAnnotationProcessor       : AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+2019-06-20 04:46:13.482  INFO 6403 --- [           main] org.atmosphere.cpr.AnnotationHandler     : Found Annotation in class sample.atmosphere.ChatService being scanned: interface org.atmosphere.config.service.ManagedService
+2019-06-20 04:46:13.517  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler mapped to context-path /chat and Broadcaster Class org.atmosphere.cpr.DefaultBroadcaster
+2019-06-20 04:46:13.517  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor [@ManagedService Interceptor, Atmosphere LifeCycle,  Track Message Size Interceptor using |, UUID Tracking Interceptor] mapped to AtmosphereHandler org.atmosphere.config.managed.ManagedAtmosphereHandler
+2019-06-20 04:46:13.521  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Auto detecting WebSocketHandler in /WEB-INF/classes/
+2019-06-20 04:46:13.522  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2019-06-20 04:46:13.534  INFO 6403 --- [           main] o.a.container.JSR356AsyncSupport         : JSR 356 Mapping path /chat
+2019-06-20 04:46:13.562  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Installing Default AtmosphereInterceptor
+2019-06-20 04:46:13.562  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2019-06-20 04:46:13.564  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2019-06-20 04:46:13.565  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2019-06-20 04:46:13.568  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2019-06-20 04:46:13.569  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2019-06-20 04:46:13.570  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2019-06-20 04:46:13.573  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2019-06-20 04:46:13.574  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2019-06-20 04:46:13.574  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2019-06-20 04:46:13.575  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2019-06-20 04:46:13.575  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2019-06-20 04:46:13.575  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2019-06-20 04:46:13.580  INFO 6403 --- [           main] o.a.interceptor.HeartbeatInterceptor     : HeartbeatInterceptor configured with padding value ' ', client frequency 60 seconds and server frequency 10 seconds
+2019-06-20 04:46:13.584  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2019-06-20 04:46:13.585  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2019-06-20 04:46:13.585  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2019-06-20 04:46:13.585  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Broadcaster Polling Wait Time 100
+2019-06-20 04:46:13.585  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Shared ExecutorService supported: true
+2019-06-20 04:46:13.586  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Messaging Thread Pool Size: Unlimited
+2019-06-20 04:46:13.586  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Async I/O Thread Pool Size: 200
+2019-06-20 04:46:13.586  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2019-06-20 04:46:13.587  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2019-06-20 04:46:13.596  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Invoke AtmosphereInterceptor on WebSocket message true
+2019-06-20 04:46:13.596  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : HttpSession supported: false
+2019-06-20 04:46:13.596  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+2019-06-20 04:46:13.597  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.5.4 using javax.servlet/3.0 and jsr356/WebSocket API
+2019-06-20 04:46:13.599  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere Framework 2.2.4 started.
+2019-06-20 04:46:13.599  INFO 6403 --- [           main] org.atmosphere.cpr.AtmosphereFramework   : 
+
+	For Atmosphere Framework Commercial Support, visit 
+	http://www.async-io.org/ or send an email to support@async-io.org
+
+2019-06-20 04:46:13.626  INFO 6403 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 37962 (http)
+2019-06-20 04:46:13.631  INFO 6403 --- [           main] s.a.SampleAtmosphereApplicationTests     : Started SampleAtmosphereApplicationTests in 4.983 seconds (JVM running for 6.011)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v1.4.0.BUILD-SNAPSHOT)
+
+2019-06-20 04:46:13.694  INFO 6403 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.18.1 on master with PID 6403 (started by root in /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere)
+2019-06-20 04:46:13.694  INFO 6403 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : No active profile set, falling back to default profiles: default
+2019-06-20 04:46:13.697  INFO 6403 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@62785afd: startup date [Thu Jun 20 04:46:13 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:13.718  INFO 6403 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-06-20 04:46:13.768  INFO 6403 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-20 04:46:13.769  INFO 6403 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Starting WebSocketConnectionManager
+2019-06-20 04:46:13.769  INFO 6403 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Connecting to WebSocket at ws://localhost:37962/chat/websocket
+2019-06-20 04:46:13.781  INFO 6403 --- [           main] s.a.SampleAtmosphereApplicationTests     : Waiting for response: latch=1
+2019-06-20 04:46:13.924  INFO 6403 --- [cTaskExecutor-1] o.s.w.s.c.WebSocketConnectionManager     : Successfully connected
+2019-06-20 04:46:13.960  INFO 6403 --- [o-auto-1-exec-1] sample.atmosphere.ChatService            : Connected
+2019-06-20 04:46:14.038  INFO 6403 --- [o-auto-1-exec-1] sample.atmosphere.ChatService            : Author test sent message test
+2019-06-20 04:46:14.075  INFO 6403 --- [lient-AsyncIO-1] s.a.SampleAtmosphereApplicationTests     : Received: TextMessage payload=[55|{"messa..], byteCount=58, last=true] (1)
+2019-06-20 04:46:14.083  INFO 6403 --- [           main] s.a.SampleAtmosphereApplicationTests     : Got response: 55|{"message":"test","author":"test","time":1561005974037}
+2019-06-20 04:46:14.088  INFO 6403 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Started ForkedBooter in 0.437 seconds (JVM running for 6.468)
+2019-06-20 04:46:14.088  INFO 6403 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@62785afd: startup date [Thu Jun 20 04:46:13 UTC 2019]; root of context hierarchy
+2019-06-20 04:46:14.089  INFO 6403 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-20 04:46:14.089  INFO 6403 --- [           main] o.s.w.s.c.WebSocketConnectionManager     : Stopping WebSocketConnectionManager
+2019-06-20 04:46:14.101  INFO 6403 --- [o-auto-1-exec-3] sample.atmosphere.ChatService            : Client 5b4253e7-850a-45ce-9ead-b1a61fba7ef0 disconnected [cancelled]
+2019-06-20 04:46:14.145  INFO 6403 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19540247: startup date [Thu Jun 20 04:46:09 UTC 2019]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.643 sec - in sample.atmosphere.SampleAtmosphereApplicationTests
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (default-report) @ spring-boot-sample-atmosphere ---
+[INFO] Loading execution data file /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] Analyzed bundle 'Spring Boot Atmosphere Sample' with 6 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ spring-boot-sample-atmosphere ---
+[INFO] Building jar: /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.4.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-atmosphere ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.092 s
+[INFO] Finished at: 2019-06-20T04:46:15+00:00
+[INFO] Final Memory: 26M/231M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4FcTYLAgPrD9ZTxEIoXqF51DkBr342r773qsGPyhTrLqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N+4u68W+AAAA[0m[Pipeline] }
+[8mha:////4F/ZUUSZXl4SVwkZ+qCpkeRzz41iyX86oVdZhy4kX026AAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyk8LGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DdZseDS+AAAA[0m[Pipeline] // stage
+[8mha:////4F+ZcJRzVnWTDIsmAIeuFo8e3pSPixsOYuf9zjjHzC1qAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVnXufYH/wG5SFpKvgAAAA==[0m[Pipeline] stage
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Parallel Jobs
+Proceeding
+[8mha:////4D8KrwwMzi5/EDweh4VcjNjFj+cmbydYwejyrC6HbsOIAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQGUNdkLwgAAAA==[0m[Pipeline] parallel
+[8mha:////4PFtSkaOZklwe6jBE+Hrf6LnXSp0H67fsk+HQXgNJJjOAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYKEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g04UC5NwgAAAA==[0m[Pipeline] { (Branch: Code Quality Publish)
+[8mha:////4EObh8jcWVGVrRu/Mmye7BceeVJo0aXsm3LqMrHW7REEAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIKEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g2dg3KGwgAAAA==[0m[Pipeline] { (Branch: Test Results Publish)
+[8mha:////4KIzANAAZi2SzPVKAN4KBV4JoBLO8U3ECCgNJQCtr6kDAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfeAtq90r4AAAA=[0m[Pipeline] publishHTML
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at PROJECT level /root/.jenkins/workspace/mvn-pipeline/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/site/jacoco to /root/.jenkins/jobs/mvn-pipeline/htmlreports/Jococo_20Code_20Quality_20Report
+[8mha:////4HSW7aFiSa6Wqw/jdRo+BDRjjeyytsW1JU5t+OYDk2VMAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIilBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3f9+DRbb4AAAA=[0m[Pipeline] junit
+Recording test results
+[8mha:////4PbhgVuyfKvJftNLHXUsSg3+8R7CFA6UlMYaZSc49X/UAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BgSW0ii+AAAA[0m[Pipeline] }
+[8mha:////4ChEyqsglv/08ycOjfTsxVeAU6qetrhJ/z0lqOiifuq/AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbNzd1iZS+AAAA[0m[Pipeline] }
+[8mha:////4FBQ7u6nU4vbh57as4TZmoHtuqj0I9RfG62vgtkcPTdVAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigYSQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eEDfI7acr4AAAA=[0m[Pipeline] // parallel
+[8mha:////4N+IaxHD0SWShkWTxDZXqdT3xgtUT3s9Ua8yrJfeKz/9AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFQMDYuoadeEEoQkhafR/SVLSiRNxNe5AoBITHizbkvWeL6iChyN5zazCwWDoDRvdpHNiifxwcZSYpTPrCQM5xTqVOpKqXWpHUcGiooQVh7XC3lEwqCNsuBV3UTuBuj5Fn7cDh9LIGzyg4JkchY/fMnvYXicZCH+cvwCYxwhl02Tb7T/P6g31jPhcwgAAAA==[0m[Pipeline] stage
+[8mha:////4IaasnlHHXx/OS/9De4+Snr0NSepxiyWTh5Ty84XXf/eAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Archive Artifacts)
+[8mha:////4M4+M6yq0P4PJGbXSYZWQjf5U3HmEwBZ25mmESv+v+PQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN65NpgK+AAAA[0m[Pipeline] archive
+The archive step is deprecated, please use archiveArtifacts instead.
+[8mha:////4F/lgnt0sRAez2ZgqYD4hSk7V5pxkwnTVdBO6f4r1pYEAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wArmI/eL4AAAA=[0m[Pipeline] }
+[8mha:////4Nv6mgDYtc8zbzsDiEstb8WcBschkYX0gduT9YpcjHjrAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAmqzcI74AAAA=[0m[Pipeline] // stage
+[8mha:////4JIBfC+KzLB0j4HsQyAlmkcnBPLrpCdihbTsykRasuP3AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOVhn6uuP4MZHX6+AAAA[0m[Pipeline] }
+[8mha:////4BUYXH9GQSzEHjtBwUm7mcQvoWDyPsGj1JNJcKtZUDZMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICgg6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY59ptP7D6RsK+AAAA[0m[Pipeline] // dir
+[8mha:////4Ma4qojbr4VHeNIlrRhoKOaMylp4foTuzOpgUDCyNMY3AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0dI6VbYbGE0SIMZDZhWQRKk/k1byDjMxY+av/XvNeb2xTxImjU62lzlOqverD6JanJo7dLfCkWr6qmilxsKqyU8WNPa9YsVisy3JsNHaW6sDJkxPsdWsepgiGXHGRuLijRu6bAU9keimLifKFOeJwH5vE9Ov8DWDue0FeloKs/AD2HAh3vQAAAA==[0m[Pipeline] }
+[8mha:////4DtVC5uozxVmHD2adJR7N98p3Gycwh7ALL5C/2nrbMMOAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId3tBtv0A5aAM1L0AAAA=[0m[Pipeline] // node
+[8mha:////4LEq2gL8kjTps2XJTAQa2gimkfOjM7lbgKN6aav74LHDAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AKPqq+S9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

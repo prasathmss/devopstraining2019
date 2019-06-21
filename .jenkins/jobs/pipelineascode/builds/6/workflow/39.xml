@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.3">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.70">
+    <parentIds>
+      <string>38</string>
+    </parentIds>
+    <id>39</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.ArtifactArchiverStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.70">
+      <arguments>
+        <entry>
+          <string>includes</string>
+          <string>target/*.jar</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.35">
+      <startTime>1560936402638</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

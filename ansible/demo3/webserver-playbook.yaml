@@ -1,0 +1,15 @@
+---
+
+
+- hosts: db
+  sudo: yes
+
+  tasks: 
+  - name: Install Apache Packages
+    apt: name=apache2 state=present
+
+  - name: Start Apache Service  
+    service: name=apache2 state=started
+
+  - name: Test service
+    copy: src=templates/index.html dest=/var/www/html/abc.html 

@@ -1,2 +1,71 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<list/>
+<list>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>59</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>60</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>61</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>62</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>63</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>64</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>65</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>66</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>67</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>68</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>69</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>70</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>71</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>72</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>73</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>74</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@2.32">
+    <job>pipelineascode</job>
+    <id>75</id>
+  </flow-owner>
+</list>

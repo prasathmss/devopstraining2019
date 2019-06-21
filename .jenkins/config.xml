@@ -21,6 +21,7 @@
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
   <clouds/>
+  <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>
@@ -75,6 +76,7 @@
     <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.3.2">
       <owner class="hudson" reference="../../.."/>
       <name>dpv</name>
+      <description></description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -111,7 +113,7 @@
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
       <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>
-      <description></description>
+      <description defined-in="se.diabol.jenkins.pipeline.DeliveryPipelineView"></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
   </views>
   <primaryView>all</primaryView>

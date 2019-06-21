@@ -7,10 +7,17 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/passwordauth
+
 # Command Line History (newest to oldest):
 :wq!
+:wq1
+:q!
 
 # Search String History (newest to oldest):
+?/passwordauth
+?/password
 
 # Expression History (newest to oldest):
 
@@ -19,17 +26,79 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"1	LINE	0
+	172.31.0.12
+"2	LINE	0
+	[ansible]
+"3	LINE	0
+	172.31.0.11
+"4	LINE	0
+	ansible_ssh_pass=redhat
+"5	LINE	0
+	nsible_ssh_user=ubuntu
+"6	LINE	0
+	ansible_ssh_pass=redhat
+"7	LINE	0
+	ansible_ssh_user=ubuntu
+"8	LINE	0
+	ansible_ssh_pass = redhat
+"9	LINE	0
+	ansible_ssh_user = ubuntu
 ""-	CHAR	0
-	"]
+	e
 
 # File marks:
-'0  5  47  ~/dockerfile
-'1  1  10  ~/index.html
-'2  1  5  /tmp/a.txt
-'3  1  17  ~/myproject/cc.txt
-'4  2  7  ~/myproject/Hello_word.txt
+'0  1  0  ~/ansible/demo3/install-playbook.yaml
+'1  13  42  ~/ansible/demo3/install-playbook.yaml
+'2  14  17  ~/ansible/demo3/install-playbook.yaml
+'3  10  10  ~/ansible/demo3/install-playbook.yaml
+'4  4  1  ~/ansible/demo3/install-playbook.yaml
+'5  1  0  ~/ansible/demo3/webserver-playbook.yaml
+'6  15  10  ~/ansible/demo3/webserver-playbook.yaml
+'7  5  5  ~/ansible/demo3/templates/index.html
+'8  18  0  ~/ansible/demo3/inventory
+'9  14  8  ~/ansible/demo3/inventory
 
 # Jumplist (newest first):
+-'  1  0  ~/ansible/demo3/install-playbook.yaml
+-'  13  42  ~/ansible/demo3/install-playbook.yaml
+-'  14  17  ~/ansible/demo3/install-playbook.yaml
+-'  10  10  ~/ansible/demo3/install-playbook.yaml
+-'  4  1  ~/ansible/demo3/install-playbook.yaml
+-'  1  0  ~/ansible/demo3/webserver-playbook.yaml
+-'  15  10  ~/ansible/demo3/webserver-playbook.yaml
+-'  5  5  ~/ansible/demo3/templates/index.html
+-'  1  0  ~/ansible/demo3/templates/index.html
+-'  18  0  ~/ansible/demo3/inventory
+-'  1  0  ~/ansible/demo3/inventory
+-'  14  8  ~/ansible/demo3/inventory
+-'  12  10  ~/ansible/demo3/inventory
+-'  10  69  ~/ansible/demo3/inventory
+-'  6  0  ~/ansible/demo3/inventory
+-'  19  18  ~/ansible/demo3/inventory
+-'  3  0  ~/ansible/demo3/webserver-playbook.yaml
+-'  10  0  ~/ansible/demo3/webserver-playbook.yaml
+-'  4  8  ~/ansible/demo3/webserver-playbook.yaml
+-'  12  38  ~/ansible/demo3/webserver-playbook.yaml
+-'  16  18  ~/ansible/demo2/inventory
+-'  1  0  ~/ansible/demo2/inventory
+-'  12  10  ~/ansible/demo2/inventory
+-'  3  10  ~/ansible/demo/inventory
+-'  1  0  ~/ansible/demo/inventory
+-'  61  0  /etc/ssh/sshd_config
+-'  1  0  /etc/ssh/sshd_config
+-'  52  25  /etc/ssh/sshd_config
+-'  66  1  /etc/ssh/sshd_config
+-'  6  25  ~/dockercompose/mailhog/docker-compose.yml
+-'  1  0  ~/dockercompose/mailhog/docker-compose.yml
+-'  3  25  ~/dockercompose/index.html
+-'  1  0  ~/dockercompose/index.html
+-'  1  0  ~/dockercompose/dockercompose.yaml
+-'  1  0  ~/dockercompose/Dockerfie
+-'  5  5  ~/dockercompose/index.html
+-'  6  17  ~/dockercompose/dockercompose.yaml
+-'  20  49  ~/dockercompose/Dockerfie
+-'  1  0  ~/dockercompose/Dockerfile
 -'  5  47  ~/dockerfile
 -'  1  0  ~/dockerfile
 -'  1  10  ~/index.html
@@ -88,41 +157,124 @@
 -'  2  7  ~/myproject/Hello_word.txt
 -'  1  0  ~/myproject/Hello_word.txt
 -'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  5  /tmp/a.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  5  /tmp/a.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  5  /tmp/a.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  1  17  ~/myproject/cc.txt
--'  2  7  ~/myproject/Hello_word.txt
--'  1  0  ~/myproject/Hello_word.txt
--'  2  7  ~/myproject/Hello_word.txt
 
 # History of marks within files (newest to oldest):
+
+> ~/ansible/demo3/install-playbook.yaml
+	"	1	0
+	^	13	43
+	.	13	42
+	+	9	38
+	+	10	45
+	+	11	0
+	+	16	2
+	+	10	34
+	+	15	32
+	+	14	30
+	+	13	42
+	m	9	4
+
+> ~/ansible/demo3/webserver-playbook.yaml
+	"	1	0
+	^	15	15
+	.	15	10
+	+	12	38
+	+	4	8
+	+	11	29
+	+	8	32
+	+	2	0
+	+	15	10
+
+> ~/ansible/demo3/templates/index.html
+	"	5	5
+	^	5	6
+	.	5	5
+	+	1	6
+	+	5	5
+
+> ~/ansible/demo3/inventory
+	"	18	0
+	^	14	9
+	.	18	0
+	+	19	0
+	+	19	22
+	+	19	18
+	+	19	18
+	+	18	0
+	+	18	24
+	+	10	25
+	+	19	0
+	+	10	16
+	+	10	16
+	+	18	15
+	+	18	16
+	+	18	16
+	+	18	17
+	+	10	17
+	+	10	0
+	+	18	0
+	+	10	69
+	+	17	0
+	+	11	12
+	+	12	23
+	+	16	0
+	+	12	1
+	+	14	0
+	+	11	2
+	+	14	8
+	+	15	0
+	+	18	0
+
+> ~/ansible/demo2/inventory
+	"	16	18
+	^	16	19
+	.	16	18
+	+	12	11
+	+	16	18
+
+> ~/ansible/demo/inventory
+	"	3	10
+	^	3	11
+	.	3	10
+	+	3	10
+
+> /etc/ssh/sshd_config
+	"	61	0
+	^	52	26
+	.	52	25
+	+	52	25
+
+> ~/dockercompose/mailhog/docker-compose.yml
+	"	6	25
+	^	6	26
+	.	6	25
+	+	6	25
+
+> ~/dockercompose/index.html
+	"	3	25
+	^	3	31
+	.	3	25
+	+	1	6
+	+	5	5
+	+	1	0
+	+	3	25
+
+> ~/dockercompose/dockercompose.yaml
+	"	1	0
+	^	6	18
+	.	6	17
+	+	6	17
+
+> ~/dockercompose/Dockerfie
+	"	1	0
+	^	20	50
+	.	20	49
+	+	1	49
+	+	1	13
+	+	20	49
+
+> ~/dockercompose/Dockerfile
+	"	1	0
 
 > ~/dockerfile
 	"	5	47

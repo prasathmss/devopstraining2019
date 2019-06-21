@@ -1,0 +1,115 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>271</queueId>
+  <timestamp>1561098012506</timestamp>
+  <startTime>1561098012508</startTime>
+  <duration>0</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+
+notify(&apos;Started&apos;) 
+ 
+ stage(&apos;Pull Git Latest Changes in the Repo&apos;) {
+   git &apos;https://github.com/amitvashist7/jenkins-devops-062019.git&apos;
+}
+   def project_path = &quot;atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/&quot;
+ 
+   dir(project_path) { 
+   stage(&apos;Clean old Packages&apos;) {       
+   sh label: &apos;&apos;, script: &apos;mvn clean&apos;
+   }
+   
+   stage(&apos;Package Build&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn package&apos;
+   }
+   
+   stage(&apos;Code Quality&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn verify&apos;
+   }
+   
+ stage(&apos;Parallel Jobs&apos;) 
+ parallel &quot;Code Quality Publish&quot;:{
+   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: &apos;target/site/jacoco/&apos;, reportFiles: &apos;index.html&apos;, reportName: &apos;Jococo Code Quality Report&apos;, reportTitles: &apos;Code Quality Report&apos;])
+   },
+  &quot;Test Results Publish&quot;: {
+   junit &apos;target/surefire-reports/TEST-*.xml&apos;
+   }
+   
+   
+   stage(&apos;Deploy Atmosphere in stage - Docker Env&apos;) {
+   sh label: &apos;&apos;, script: &apos;docker-compose up -d --build&apos;
+   }
+   stage(&apos;Archive Artifacts&apos;) {
+   archive &apos;target/*.jar&apos;
+   }
+   
+ 
+   
+   }
+ notify(&apos;Completed&apos;) 
+    
+}
+
+
+def notify(status){ 
+    emailext(
+        to: &quot;amitvashist7@gmail.com&quot;,
+        subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+        body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check Console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt; ${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+        )   
+    
+    
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>7152254</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>18477380</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>10475313</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>29014862</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>2272009</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <start>2</start>
+    <done>false</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>false</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

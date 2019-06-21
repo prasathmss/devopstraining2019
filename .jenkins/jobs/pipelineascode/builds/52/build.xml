@@ -1,0 +1,207 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.70">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.23">
+      <messageId>&lt;392321270.1.1561011599984.JavaMail.root@master&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.10.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.8.0">
+              <sha1>5f9f1b3ff766e1b15f9a41e198eac1aa649dbfa3</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>52</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/amitvashist7/jenkins-devops-062019.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.10.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/root/.jenkins/workspace/pipelineascode</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.9">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/amitvashist7/jenkins-devops-062019.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.4.4"/>
+    <htmlpublisher.HtmlPublisherTarget_-HTMLPublishedForProjectMarkerAction plugin="htmlpublisher@1.18">
+      <actualHtmlPublisherTarget>
+        <reportName>Jococo Code Quality Report</reportName>
+        <reportDir>target/site/jacoco/</reportDir>
+        <reportFiles>index.html</reportFiles>
+        <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+        <reportTitles>Code Quality Report</reportTitles>
+        <keepAll>false</keepAll>
+        <allowMissing>false</allowMissing>
+      </actualHtmlPublisherTarget>
+    </htmlpublisher.HtmlPublisherTarget_-HTMLPublishedForProjectMarkerAction>
+    <hudson.tasks.junit.TestResultAction plugin="junit@1.28">
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>1</totalCount>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <testData/>
+    </hudson.tasks.junit.TestResultAction>
+  </actions>
+  <queueId>223</queueId>
+  <timestamp>1561011595777</timestamp>
+  <startTime>1561011595779</startTime>
+  <result>SUCCESS</result>
+  <duration>52597</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+
+notify(&apos;Started&apos;) 
+ 
+ stage(&apos;Pull Git Latest Changes in the Repo&apos;) {
+   git &apos;https://github.com/amitvashist7/jenkins-devops-062019.git&apos;
+}
+   def project_path = &quot;atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/&quot;
+ 
+   dir(project_path) { 
+   stage(&apos;Clean old Packages&apos;) {       
+   sh label: &apos;&apos;, script: &apos;mvn clean&apos;
+   }
+   
+   stage(&apos;Package Build&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn package&apos;
+   }
+   
+   stage(&apos;Code Quality&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn verify&apos;
+   }
+   
+ stage(&apos;Parallel Jobs&apos;) 
+ parallel &quot;Code Quality Publish&quot;:{
+   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: &apos;target/site/jacoco/&apos;, reportFiles: &apos;index.html&apos;, reportName: &apos;Jococo Code Quality Report&apos;, reportTitles: &apos;Code Quality Report&apos;])
+   },
+  &quot;Test Results Publish&quot;: {
+   junit &apos;target/surefire-reports/TEST-*.xml&apos;
+   }
+   
+   
+   stage(&apos;Archive Artifacts&apos;) {
+   archive &apos;target/*.jar&apos;
+   }
+   
+ 
+   
+   }
+ notify(&apos;Completed&apos;) 
+    
+}
+
+
+def notify(status){ 
+    emailext(
+        to: &quot;amitvashist7@gmail.com&quot;,
+        subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+        body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check Console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt; ${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+        )   
+    
+    
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>105808037</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1522424995</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1767134081</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>774270259</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>70669936</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>48</iota>
+    <head>1:48</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.10.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/amitvashist7/jenkins-devops-062019.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/root/.jenkins/workspace/pipelineascode</workspace>
+      <changelogFile>/root/.jenkins/jobs/pipelineascode/builds/52/changelog2912681252418699498.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

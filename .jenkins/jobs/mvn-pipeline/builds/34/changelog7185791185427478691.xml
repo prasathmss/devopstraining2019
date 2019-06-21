@@ -1,0 +1,17 @@
+commit eb15da8212be81277a4abb3e1fd3b28a633944c2
+tree b471792e8d79bfc839c837f12bc4b737e6abb7f5
+parent 157fcbc26646dc7677ed98510589eba90f59e187
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-20 05:07:05 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-20 05:07:05 +0000
+
+    Docker-Compose-Demos
+
+
+
+:100644 100644 4d263cf0907c4dfc0f6c89ca347038890724a7bf 4d263cf0907c4dfc0f6c89ca347038890724a7bf R100	docker/docker-compose/Dockerfile	docker/docker-compose/apache/Dockerfile
+:100644 100644 166158f176e5c451eea2eedeb27b0225762250ac 166158f176e5c451eea2eedeb27b0225762250ac R100	docker/docker-compose/docker-compose.yaml	docker/docker-compose/apache/docker-compose.yaml
+:100644 100644 1f3c4db97e5036fb87d936c2e85c40bbf9ac573d 1f3c4db97e5036fb87d936c2e85c40bbf9ac573d R100	docker/docker-compose/index.html	docker/docker-compose/apache/index.html
+:000000 100644 0000000000000000000000000000000000000000 5ea4af5bdd9b458d4e4ff51c08134adb1111b078 A	docker/docker-compose/mailhog/docker-compose.yml
+:000000 100644 0000000000000000000000000000000000000000 f65f3aebed288d26d241d813c603a5385703ec3a A	docker/docker-compose/wordpress/docker-compose.yml
+:000000 100644 0000000000000000000000000000000000000000 c9a41df71a7a71fc04a6e4857d17cc655d233403 A	docker/docker-compose/wordpress/nginx/wordpress.conf
+:000000 100644 0000000000000000000000000000000000000000 77e1e87716468bb6667d852c15b43fe49d4abbf4 A	docker/docker-compose/wordpress/wordpress/.htaccess
